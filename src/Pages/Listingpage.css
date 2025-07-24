@@ -1,0 +1,14 @@
+.my-listings-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.table img {
+  object-fit: cover;
+  border: 1px solid #ddd;
+}

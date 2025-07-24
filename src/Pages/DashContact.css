@@ -1,0 +1,27 @@
+.contact-us-page {
+  background: #f9fbfd;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.contact-info .social-links button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}

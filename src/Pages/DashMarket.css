@@ -1,0 +1,27 @@
+.product-card {
+  cursor: pointer;
+}
+
+.search-bar {
+  border-radius: 30px;
+  padding: 14px 20px;    /* Increased padding for height */
+  font-size: 1.1rem;     /* Slightly larger text */
+  width: 10000000;           /* Full width */
+       /* Limit max width for better look */
+  margin: auto;          /* Center align */
+}
+
+.category-buttons {
+  margin-top: 10px;       /* Push down slightly */
+  gap: 12px;              /* Add spacing between buttons */
+  display: flex;
+  justify-content: center; /* Center the categories horizontally */
+}
+
+.modal-body img {
+  transition: transform 0.3s ease;
+}
+
+.modal-body img:hover {
+  transform: scale(1.05);
+}

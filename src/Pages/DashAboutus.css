@@ -1,0 +1,148 @@
+.about-us-page {
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  color: rgb(23, 22, 22);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  gap: 60px;
+}
+
+.about-us-text {
+  flex: 1;
+  animation: slideInLeft 1s ease forwards;
+}
+
+.about-us-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.about-us-text h1 span {
+  color: #3b6cb7;
+}
+
+.about-us-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #3b6cb7;
+}
+
+.about-us-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.about-button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #000000;
+  color: #7fa6d7;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.about-button:hover {
+  background-color: #6d72fa;
+  color: #000;
+}
+
+.about-us-card {
+  flex: 1;
+  background: linear-gradient(145deg, #3b6cb7, #e0f7fa);
+  border-radius: 25px;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: slideInRight 1s ease forwards;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+  font-size: 5rem;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  border-radius: 50%;
+  backdrop-filter: blur(5px);
+  animation: bounce 1.5s infinite;
+}
+
+.card-lines {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .about-us-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .card-icon {
+    font-size: 4rem;
+  }
+}
