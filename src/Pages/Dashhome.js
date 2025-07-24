@@ -18,8 +18,7 @@ function Dashhome() {
           <li>&nbsp;<Nav.Link as={NavLink} end to="/" className="side-link">&nbsp; &nbsp; &nbsp; 🏠 Home</Nav.Link></li>
           <li><Nav.Link as={NavLink} to="/dashr" className="side-link">&nbsp; &nbsp; &nbsp;📄 Registration</Nav.Link></li>
           <li><Nav.Link as={NavLink} to="/listingsPage" className="side-link">&nbsp; &nbsp; &nbsp;✅ Listing</Nav.Link></li>
-           <li><Nav.Link as={NavLink} to="/contact" className="side-link">&nbsp; &nbsp; &nbsp;☎️ Contact Us</Nav.Link></li>
-           <li><Nav.Link as={NavLink} to="/about" className="side-link">&nbsp; &nbsp; &nbsp;🙍‍♂️ About Us</Nav.Link></li>
+          
            <li><Nav.Link as={NavLink} to="/login" className="side-link">&nbsp; &nbsp; &nbsp;📤 LogOut</Nav.Link></li>
         </ul>
       </aside>
